@@ -41,12 +41,30 @@ print(edgeSrc)
 print("a's target: ")
 print(edgeTrgt)
 
+#numEdges
+print('NumEdges:')
+print(g.NumEdges)
+#numVertices
+print('NumVertices:')
+print(g.NumVertices)
 
-
-print("\ndemonstrating producing an error on inserting a edge with name already taken:")
+#error demonstrations
+print("\ndemonstrating producing an error on inserting a edge with NAME already taken:")
 print("adding edge named:'c', source:'Q', and target:'P' ")
 g.add_edge('c','Q','P')
 
 print("\ndemonstrating producing an error on inserting a edge with PATH already existing:")
 print("adding edge named:'d', source:'P', and target:'Q' ")
 g.add_edge('d','P','Q')
+
+print("\ndemonstrating producing an error on inserting a vertice with NAME already taken:")
+g.add_vertice('P')
+
+
+
+
+
+
+
+
+
